@@ -40,6 +40,7 @@ img {
   --text-light-grey: #939393;
   --bg-color-dark: #f5f5f5;
   --text-color-secondary: #8f95a5;
+  --text-color-darker: #2a3246;
 }
 
 body {
@@ -126,8 +127,12 @@ body {
 
 .row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+.skills {
+  padding-bottom: 180px;
 }
 
 .skills-title {
@@ -156,6 +161,10 @@ body {
   padding: 32px 18px;
   margin-top: 30px;
   max-width: 882px;
+}
+
+.horizontal-article.row {
+  flex-direction: row-reverse;
 }
 
 .vertical-article img {
@@ -189,4 +198,47 @@ body {
   color: var(--bg-primary);
   background: var(--dark-theme-primary);
   border-radius: 10px;
+}
+
+.about {
+  padding-bottom: 180px;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--main-black);
+  margin-bottom: 60px;
+}
+
+.about-descr {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
+  margin-bottom: 30px;
+  max-width: 652px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: center;
+  gap: 131px;
+}
+
+.about-item {
+  text-align: center;
+}
+
+.about-text {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--text-color-darker);
+  margin-bottom: 6px;
+}
+
+.about-list-span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
 }
